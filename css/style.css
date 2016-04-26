@@ -288,6 +288,15 @@ a.mail {
 	  background-size: 120%;
 }
 
+.img-circular.extra-small {
+	  background-size: 140%;
+}
+
+
+.img-circular.extra-small:hover {
+	  background-size: 135%;
+}
+
 .portfolio.transition .img-circular {
 	-webkit-transition: all 0.5s ease-in-out;
   	transition: all 0.5s ease-in-out;
