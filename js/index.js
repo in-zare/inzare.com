@@ -21,6 +21,12 @@ $( function() {
 
     return false;
   });
+
+
+  $(".new-tab").on("click", function(){
+    window.open($(this).attr("href"),'_blank');
+    return false;
+  });
 });
 
 
@@ -35,8 +41,10 @@ function initSlider()
     $(".portfolio-masonry").html($(".img-circular").clone());
 
     $(".img-circular").each(function() {
-      var url = $(this).css("background-image").replace('url("','').replace('")','');
-      $(this).attr("data-fancybox-href", url);
+      if ( typeof $(this).attr("href") == "undefined" ) {
+        var url = $(this).css("background-image").replace('url("','').replace('")','');
+        $(this).attr("href", url);
+      }
     });
 
     $(".img-circular").fancybox({
