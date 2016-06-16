@@ -372,6 +372,7 @@ a.mail {
 }
 
 .portfolio-slider {
+overflow-y: visible !important;
 	height: 560px;
 }
 
