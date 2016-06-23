@@ -299,6 +299,7 @@ a.mail {
 
 .portfolio.transition .img-circular {
 	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
   	transition: all 0.5s ease-in-out;
 }
 
@@ -372,7 +373,7 @@ a.mail {
 }
 
 .portfolio-slider {
-overflow-y: visible !important;
+	overflow-y: visible !important;
 	height: 560px;
 }
 
